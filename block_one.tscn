@@ -1,0 +1,28 @@
+[gd_scene load_steps=5 format=3 uid="uid://c8yrwesqa8w4y"]
+
+[ext_resource type="PackedScene" uid="uid://b3tovb4oks2nm" path="res://basic_ground.tscn" id="1_ln0tn"]
+[ext_resource type="PackedScene" uid="uid://dkdd1i4r8x1xq" path="res://kenney_city_buildings/large_buildingA.glb" id="2_1e3q5"]
+[ext_resource type="PackedScene" uid="uid://dbysn4ihn8pow" path="res://kenney_city_buildings/skyscraperA.glb" id="3_yes1x"]
+[ext_resource type="PackedScene" uid="uid://dmm8mqr5qun28" path="res://kenney_city_buildings/small_buildingA.glb" id="4_kv8gh"]
+
+[node name="BlockOne" type="Node3D"]
+
+[node name="BasicGround" parent="." instance=ExtResource("1_ln0tn")]
+
+[node name="large_buildingA_glb" type="Node3D" parent="." instance=ExtResource("2_1e3q5")]
+transform = Transform3D(1, -8.74227e-08, -4.37114e-07, 8.74228e-08, 1, 2.62268e-07, 4.37114e-07, -2.62268e-07, 1, -1.20812, 0.25, 1.57297)
+
+[node name="large_buildingA_glb2" type="Node3D" parent="." instance=ExtResource("2_1e3q5")]
+transform = Transform3D(1, -8.74227e-08, -4.37114e-07, 8.74228e-08, 1, 2.62268e-07, 4.37114e-07, -2.62268e-07, 1, 1.13768, 0.25, 1.58524)
+
+[node name="large_buildingA_glb3" type="Node3D" parent="." instance=ExtResource("2_1e3q5")]
+transform = Transform3D(1, -8.74227e-08, -4.37114e-07, 8.74228e-08, 1, 2.62268e-07, 4.37114e-07, -2.62268e-07, 1, 1.12173, 0.25, -1.6541)
+
+[node name="large_buildingA_glb4" type="Node3D" parent="." instance=ExtResource("2_1e3q5")]
+transform = Transform3D(1, -8.74227e-08, -4.37114e-07, 8.74228e-08, 1, 2.62268e-07, 4.37114e-07, -2.62268e-07, 1, -1.11607, 0.25, -1.66723)
+
+[node name="skyscraperA_glb" type="Node3D" parent="." instance=ExtResource("3_yes1x")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.58444, 0.25, -0.0432034)
+
+[node name="small_buildingA_glb" type="Node3D" parent="." instance=ExtResource("4_kv8gh")]
+transform = Transform3D(7.54979e-08, 0, 1, 0, 1, 0, -1, 0, 7.54979e-08, 1.86237, 0.25, 0.0811858)

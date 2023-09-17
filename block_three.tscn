@@ -1,0 +1,36 @@
+[gd_scene load_steps=7 format=3 uid="uid://wi3jj6g3l524"]
+
+[ext_resource type="PackedScene" uid="uid://b3tovb4oks2nm" path="res://basic_ground.tscn" id="1_ok11v"]
+[ext_resource type="PackedScene" uid="uid://to4jg41822f4" path="res://kenney_city_buildings/skyscraperD.glb" id="2_o8asw"]
+[ext_resource type="PackedScene" uid="uid://dbysn4ihn8pow" path="res://kenney_city_buildings/skyscraperA.glb" id="3_6xk5r"]
+[ext_resource type="PackedScene" uid="uid://n8sdcwtltxjr" path="res://kenney_city_buildings/skyscraperE.glb" id="4_80vpo"]
+[ext_resource type="PackedScene" uid="uid://tw0hey7xk4dy" path="res://kenney_city_buildings/skyscraperF.glb" id="5_j77e4"]
+[ext_resource type="PackedScene" uid="uid://ct1f4witvc0r8" path="res://kenney_city_buildings/skyscraperB.glb" id="6_vw081"]
+
+[node name="BlockThree" type="Node3D"]
+
+[node name="BasicGround" parent="." instance=ExtResource("1_ok11v")]
+
+[node name="skyscraperD_glb" type="Node3D" parent="." instance=ExtResource("2_o8asw")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.173208, 0.25, 1.68099)
+
+[node name="skyscraperA_glb" type="Node3D" parent="." instance=ExtResource("3_6xk5r")]
+transform = Transform3D(1, 0, -1.74846e-07, 0, 1, 0, 1.74846e-07, 0, 1, 1.36864, 0.25, 1.67324)
+
+[node name="skyscraperE_glb" type="Node3D" parent="." instance=ExtResource("4_80vpo")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.62164, 0.25, 1.71416)
+
+[node name="skyscraperF_glb" type="Node3D" parent="." instance=ExtResource("5_j77e4")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -1.70933, 0.25, 0.0039134)
+
+[node name="skyscraperB_glb" type="Node3D" parent="." instance=ExtResource("6_vw081")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -1.7371, 0.25, -1.56191)
+
+[node name="skyscraperE_glb2" type="Node3D" parent="." instance=ExtResource("4_80vpo")]
+transform = Transform3D(-1, 0, 1.50996e-07, 0, 1, 0, -1.50996e-07, 0, -1, -0.108197, 0.25, -1.60446)
+
+[node name="skyscraperF_glb2" type="Node3D" parent="." instance=ExtResource("5_j77e4")]
+transform = Transform3D(-1, 0, 1.50996e-07, 0, 1, 0, -1.50996e-07, 0, -1, 1.52177, 0.25, -1.60196)
+
+[node name="skyscraperB_glb2" type="Node3D" parent="." instance=ExtResource("6_vw081")]
+transform = Transform3D(7.54979e-08, 0, 1, 0, 1, 0, -1, 0, 7.54979e-08, 1.42116, 0.25, -0.0111798)

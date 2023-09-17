@@ -1,0 +1,49 @@
+[gd_scene load_steps=3 format=3 uid="uid://crkms7a1frc1k"]
+
+[ext_resource type="PackedScene" uid="uid://b3tovb4oks2nm" path="res://basic_ground.tscn" id="1_r6qwk"]
+[ext_resource type="PackedScene" uid="uid://q82slgn4h1en" path="res://kenney_city-kit-roads/Models/GLTF format/road_straight.glb" id="2_tlgio"]
+
+[node name="RoadsOne" type="Node3D"]
+
+[node name="BasicGround" parent="." instance=ExtResource("1_r6qwk")]
+
+[node name="Road" type="Node3D" parent="."]
+
+[node name="road_straight_glb" type="Node3D" parent="Road" instance=ExtResource("2_tlgio")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -0.236448, 0.25, 1.99898)
+
+[node name="road_straight_glb2" type="Node3D" parent="Road" instance=ExtResource("2_tlgio")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -0.240961, 0.25, 1.00745)
+
+[node name="road_straight_glb3" type="Node3D" parent="Road" instance=ExtResource("2_tlgio")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -0.236682, 0.25, 0.023746)
+
+[node name="road_straight_glb4" type="Node3D" parent="Road" instance=ExtResource("2_tlgio")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -0.236842, 0.25, -0.975304)
+
+[node name="road_straight_glb5" type="Node3D" parent="Road" instance=ExtResource("2_tlgio")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -0.236281, 0.25, -1.94914)
+
+[node name="road_straight_glb6" type="Node3D" parent="Road" instance=ExtResource("2_tlgio")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -0.24203, 0.249999, -1.99498)
+
+[node name="Road2" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.11421, 0, 0)
+
+[node name="road_straight_glb" parent="Road2" instance=ExtResource("2_tlgio")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -0.236448, 0.25, 1.99898)
+
+[node name="road_straight_glb2" parent="Road2" instance=ExtResource("2_tlgio")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -0.240961, 0.25, 1.00745)
+
+[node name="road_straight_glb3" parent="Road2" instance=ExtResource("2_tlgio")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -0.236682, 0.25, 0.023746)
+
+[node name="road_straight_glb4" parent="Road2" instance=ExtResource("2_tlgio")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -0.236842, 0.25, -0.975304)
+
+[node name="road_straight_glb5" parent="Road2" instance=ExtResource("2_tlgio")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -0.236281, 0.25, -1.94914)
+
+[node name="road_straight_glb6" parent="Road2" instance=ExtResource("2_tlgio")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -0.24203, 0.249999, -1.99498)
