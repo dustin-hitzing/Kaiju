@@ -5,7 +5,7 @@
 [ext_resource type="PackedScene" uid="uid://4i8cs021xmhu" path="res://block_two.tscn" id="3_f7004"]
 [ext_resource type="PackedScene" uid="uid://wi3jj6g3l524" path="res://block_three.tscn" id="4_0pxmq"]
 [ext_resource type="PackedScene" uid="uid://d00nvc0sb6c5a" path="res://intersection.tscn" id="5_2w62e"]
-[ext_resource type="PackedScene" uid="uid://cxtlmfdaq2yd8" path="res://alien_kaiju.tscn" id="6_a7mws"]
+[ext_resource type="PackedScene" uid="uid://lb4ibe61263l" path="res://Character.tscn" id="6_p40r1"]
 
 [sub_resource type="Gradient" id="Gradient_3udxv"]
 offsets = PackedFloat32Array(0, 0.189718, 1)
@@ -55,155 +55,155 @@ transform = Transform3D(1, 0, 0, 0, 0.915922, 0.401356, 0, -0.401356, 0.915922, 
 
 [node name="World" type="Node3D" parent="."]
 
-[node name="block_one" type="Node3D" parent="World" instance=ExtResource("1_ypa8a")]
+[node name="block_one" parent="World" instance=ExtResource("1_ypa8a")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 4.76837e-07, -1)
 
-[node name="roads_one" type="Node3D" parent="World" instance=ExtResource("2_1e1x6")]
+[node name="roads_one" parent="World" instance=ExtResource("2_1e1x6")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, -1)
 
-[node name="block_two" type="Node3D" parent="World" instance=ExtResource("3_f7004")]
+[node name="block_two" parent="World" instance=ExtResource("3_f7004")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, -1)
 
-[node name="roads_one2" type="Node3D" parent="World" instance=ExtResource("2_1e1x6")]
+[node name="roads_one2" parent="World" instance=ExtResource("2_1e1x6")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 0, -6)
 
-[node name="block_two2" type="Node3D" parent="World" instance=ExtResource("3_f7004")]
+[node name="block_two2" parent="World" instance=ExtResource("3_f7004")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -11)
 
-[node name="roads_one3" type="Node3D" parent="World" instance=ExtResource("2_1e1x6")]
+[node name="roads_one3" parent="World" instance=ExtResource("2_1e1x6")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 10, 0, -6)
 
-[node name="roads_one4" type="Node3D" parent="World" instance=ExtResource("2_1e1x6")]
+[node name="roads_one4" parent="World" instance=ExtResource("2_1e1x6")]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 5, 0, -11)
 
-[node name="block_three" type="Node3D" parent="World" instance=ExtResource("4_0pxmq")]
+[node name="block_three" parent="World" instance=ExtResource("4_0pxmq")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10, 0, -11)
 
-[node name="intersection" type="Node3D" parent="World" instance=ExtResource("5_2w62e")]
+[node name="intersection" parent="World" instance=ExtResource("5_2w62e")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, -6)
 
-[node name="intersection2" type="Node3D" parent="World" instance=ExtResource("5_2w62e")]
+[node name="intersection2" parent="World" instance=ExtResource("5_2w62e")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 0, 4)
 
-[node name="intersection5" type="Node3D" parent="World" instance=ExtResource("5_2w62e")]
+[node name="intersection5" parent="World" instance=ExtResource("5_2w62e")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.9, 0, -16)
 
-[node name="roads_one5" type="Node3D" parent="World" instance=ExtResource("2_1e1x6")]
+[node name="roads_one5" parent="World" instance=ExtResource("2_1e1x6")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 0, 4)
 
-[node name="roads_one6" type="Node3D" parent="World" instance=ExtResource("2_1e1x6")]
+[node name="roads_one6" parent="World" instance=ExtResource("2_1e1x6")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 0, -16)
 
-[node name="roads_one7" type="Node3D" parent="World" instance=ExtResource("2_1e1x6")]
+[node name="roads_one7" parent="World" instance=ExtResource("2_1e1x6")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 10, 0, -16)
 
-[node name="roads_one8" type="Node3D" parent="World" instance=ExtResource("2_1e1x6")]
+[node name="roads_one8" parent="World" instance=ExtResource("2_1e1x6")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -5, 0, -16)
 
-[node name="roads_one9" type="Node3D" parent="World" instance=ExtResource("2_1e1x6")]
+[node name="roads_one9" parent="World" instance=ExtResource("2_1e1x6")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -5, 0, 4)
 
-[node name="roads_one10" type="Node3D" parent="World" instance=ExtResource("2_1e1x6")]
+[node name="roads_one10" parent="World" instance=ExtResource("2_1e1x6")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 10, 0, 4)
 
-[node name="roads_one11" type="Node3D" parent="World" instance=ExtResource("2_1e1x6")]
+[node name="roads_one11" parent="World" instance=ExtResource("2_1e1x6")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -5, 0, -6)
 
-[node name="roads_one12" type="Node3D" parent="World" instance=ExtResource("2_1e1x6")]
+[node name="roads_one12" parent="World" instance=ExtResource("2_1e1x6")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 15, 0, -6)
 
-[node name="roads_one13" type="Node3D" parent="World" instance=ExtResource("2_1e1x6")]
+[node name="roads_one13" parent="World" instance=ExtResource("2_1e1x6")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 15, 0, 4)
 
-[node name="roads_one14" type="Node3D" parent="World" instance=ExtResource("2_1e1x6")]
+[node name="roads_one14" parent="World" instance=ExtResource("2_1e1x6")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 15, 0, -16)
 
-[node name="roads_one15" type="Node3D" parent="World" instance=ExtResource("2_1e1x6")]
+[node name="roads_one15" parent="World" instance=ExtResource("2_1e1x6")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -10, 0, -16)
 
-[node name="roads_one16" type="Node3D" parent="World" instance=ExtResource("2_1e1x6")]
+[node name="roads_one16" parent="World" instance=ExtResource("2_1e1x6")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -10, 0, -6)
 
-[node name="roads_one17" type="Node3D" parent="World" instance=ExtResource("2_1e1x6")]
+[node name="roads_one17" parent="World" instance=ExtResource("2_1e1x6")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -10, 0, 4)
 
-[node name="roads_one18" type="Node3D" parent="World" instance=ExtResource("2_1e1x6")]
+[node name="roads_one18" parent="World" instance=ExtResource("2_1e1x6")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 20, 0, 4)
 
-[node name="roads_one19" type="Node3D" parent="World" instance=ExtResource("2_1e1x6")]
+[node name="roads_one19" parent="World" instance=ExtResource("2_1e1x6")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 19, 0, -6)
 
-[node name="roads_one20" type="Node3D" parent="World" instance=ExtResource("2_1e1x6")]
+[node name="roads_one20" parent="World" instance=ExtResource("2_1e1x6")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 20, 0, -16)
 
-[node name="roads_one21" type="Node3D" parent="World" instance=ExtResource("2_1e1x6")]
+[node name="roads_one21" parent="World" instance=ExtResource("2_1e1x6")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 20, 0, -6)
 
-[node name="block_two3" type="Node3D" parent="World" instance=ExtResource("3_f7004")]
+[node name="block_two3" parent="World" instance=ExtResource("3_f7004")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -5, 0, -1)
 
-[node name="block_three2" type="Node3D" parent="World" instance=ExtResource("4_0pxmq")]
+[node name="block_three2" parent="World" instance=ExtResource("4_0pxmq")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -5, 0, -11)
 
-[node name="block_three3" type="Node3D" parent="World" instance=ExtResource("4_0pxmq")]
+[node name="block_three3" parent="World" instance=ExtResource("4_0pxmq")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 15, 0, -1)
 
-[node name="block_one2" type="Node3D" parent="World" instance=ExtResource("1_ypa8a")]
+[node name="block_one2" parent="World" instance=ExtResource("1_ypa8a")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 20.0102, 0, -1)
 
-[node name="block_one3" type="Node3D" parent="World" instance=ExtResource("1_ypa8a")]
+[node name="block_one3" parent="World" instance=ExtResource("1_ypa8a")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 15, 0, -11)
 
-[node name="block_one4" type="Node3D" parent="World" instance=ExtResource("1_ypa8a")]
+[node name="block_one4" parent="World" instance=ExtResource("1_ypa8a")]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 20, 0, -11)
 
-[node name="block_two4" type="Node3D" parent="World" instance=ExtResource("3_f7004")]
+[node name="block_two4" parent="World" instance=ExtResource("3_f7004")]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, -10, 0, -1)
 
-[node name="block_two5" type="Node3D" parent="World" instance=ExtResource("3_f7004")]
+[node name="block_two5" parent="World" instance=ExtResource("3_f7004")]
 transform = Transform3D(1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, -10.137, 0.0824585, -10.8909)
 
-[node name="block_two6" type="Node3D" parent="World" instance=ExtResource("3_f7004")]
+[node name="block_two6" parent="World" instance=ExtResource("3_f7004")]
 transform = Transform3D(1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, -10, 0, 9)
 
-[node name="block_two7" type="Node3D" parent="World" instance=ExtResource("3_f7004")]
+[node name="block_two7" parent="World" instance=ExtResource("3_f7004")]
 transform = Transform3D(1, 0, -1.74846e-07, 0, 1, 0, 1.74846e-07, 0, 1, -5, 0, 9)
 
-[node name="block_two8" type="Node3D" parent="World" instance=ExtResource("3_f7004")]
+[node name="block_two8" parent="World" instance=ExtResource("3_f7004")]
 transform = Transform3D(-2.18557e-07, 0, -1, 0, 1, 0, 1, 0, -2.18557e-07, 0, 0, 9)
 
-[node name="block_three4" type="Node3D" parent="World" instance=ExtResource("4_0pxmq")]
+[node name="block_three4" parent="World" instance=ExtResource("4_0pxmq")]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 10, 0, 9)
 
-[node name="block_three5" type="Node3D" parent="World" instance=ExtResource("4_0pxmq")]
+[node name="block_three5" parent="World" instance=ExtResource("4_0pxmq")]
 transform = Transform3D(1.31134e-07, 0, 1, 0, 1, 0, -1, 0, 1.31134e-07, 15, 0, 9)
 
-[node name="block_three6" type="Node3D" parent="World" instance=ExtResource("4_0pxmq")]
+[node name="block_three6" parent="World" instance=ExtResource("4_0pxmq")]
 transform = Transform3D(1, 0, -1.74846e-07, 0, 1, 0, 1.74846e-07, 0, 1, 20, 0, 9)
 
-[node name="block_two9" type="Node3D" parent="World" instance=ExtResource("3_f7004")]
+[node name="block_two9" parent="World" instance=ExtResource("3_f7004")]
 transform = Transform3D(-2.18557e-07, 0, -1, 0, 1, 0, 1, 0, -2.18557e-07, 20, 0, -21)
 
-[node name="block_two10" type="Node3D" parent="World" instance=ExtResource("3_f7004")]
+[node name="block_two10" parent="World" instance=ExtResource("3_f7004")]
 transform = Transform3D(-1, 0, 2.62268e-07, 0, 1, 0, -2.62268e-07, 0, -1, 15, 0, -21)
 
-[node name="block_two11" type="Node3D" parent="World" instance=ExtResource("3_f7004")]
+[node name="block_two11" parent="World" instance=ExtResource("3_f7004")]
 transform = Transform3D(-1, 0, 2.62268e-07, 0, 1, 0, -2.62268e-07, 0, -1, 10, 0, -21)
 
-[node name="block_two12" type="Node3D" parent="World" instance=ExtResource("3_f7004")]
+[node name="block_two12" parent="World" instance=ExtResource("3_f7004")]
 transform = Transform3D(-1, 0, 2.62268e-07, 0, 1, 0, -2.62268e-07, 0, -1, 0, 0, -21)
 
-[node name="block_two13" type="Node3D" parent="World" instance=ExtResource("3_f7004")]
+[node name="block_two13" parent="World" instance=ExtResource("3_f7004")]
 transform = Transform3D(3.0598e-07, 0, 1, 0, 1, 0, -1, 0, 3.0598e-07, -5, 0, -21)
 
-[node name="block_two14" type="Node3D" parent="World" instance=ExtResource("3_f7004")]
+[node name="block_two14" parent="World" instance=ExtResource("3_f7004")]
 transform = Transform3D(1, 0, -3.49691e-07, 0, 1, 0, 3.49691e-07, 0, 1, -10, 0, -21)
 
-[node name="roads_one22" type="Node3D" parent="World" instance=ExtResource("2_1e1x6")]
+[node name="roads_one22" parent="World" instance=ExtResource("2_1e1x6")]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 5, 1.90735e-06, -21)
 
-[node name="roads_one23" type="Node3D" parent="World" instance=ExtResource("2_1e1x6")]
+[node name="roads_one23" parent="World" instance=ExtResource("2_1e1x6")]
 transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 5, 0, 9)
 
-[node name="Kaiju" parent="." instance=ExtResource("6_a7mws")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.79764, 0.233324, 0)
+[node name="Character" parent="." instance=ExtResource("6_p40r1")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5, 5, 0)

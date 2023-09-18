@@ -1,0 +1,24 @@
+[gd_scene load_steps=3 format=3 uid="uid://m8d16lp8j7so"]
+
+[ext_resource type="Texture2D" uid="uid://dndikap4n7m5" path="res://characters/alien.png" id="1_g0omt"]
+[ext_resource type="Script" path="res://character_avatars/avatar.gd" id="1_u1c5v"]
+
+[node name="Alien_Avatar" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_u1c5v")
+metadata/selected = false
+
+[node name="Border" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 280.0
+offset_bottom = 257.0
+
+[node name="AvatarPic" type="Sprite2D" parent="."]
+position = Vector2(139, 127)
+scale = Vector2(0.533814, 0.60215)
+texture = ExtResource("1_g0omt")

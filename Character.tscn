@@ -1,0 +1,91 @@
+[gd_scene load_steps=19 format=3 uid="uid://lb4ibe61263l"]
+
+[ext_resource type="Script" path="res://alien_kaiju.gd" id="1_6m5ja"]
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_guhh3"]
+animation = &"HitReact"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_8gndh"]
+animation = &"Idle"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_0qioo"]
+animation = &"Punch"
+
+[sub_resource type="AnimationNodeAnimation" id="AnimationNodeAnimation_jhqnn"]
+animation = &"Walk"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_wg22v"]
+advance_mode = 2
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_5ji8g"]
+advance_mode = 2
+advance_condition = &"is_moving"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_gh1y2"]
+advance_mode = 2
+advance_condition = &"is_idle"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_5moda"]
+advance_mode = 2
+advance_condition = &"punch"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_twpll"]
+advance_mode = 2
+advance_condition = &"punch"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_fybca"]
+switch_mode = 2
+advance_mode = 2
+advance_condition = &"is_idle"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_j72ph"]
+switch_mode = 2
+advance_mode = 2
+advance_condition = &"is_moving"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_jqepr"]
+advance_mode = 2
+advance_condition = &"is_hit"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_5ooqd"]
+advance_mode = 2
+advance_condition = &"is_idle"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_14byg"]
+advance_mode = 2
+advance_condition = &"is_hit"
+
+[sub_resource type="AnimationNodeStateMachineTransition" id="AnimationNodeStateMachineTransition_jt65t"]
+advance_mode = 2
+advance_condition = &"is_moving"
+
+[sub_resource type="AnimationNodeStateMachine" id="AnimationNodeStateMachine_dhubs"]
+states/HitReact/node = SubResource("AnimationNodeAnimation_guhh3")
+states/HitReact/position = Vector2(506, 156)
+states/Idle/node = SubResource("AnimationNodeAnimation_8gndh")
+states/Idle/position = Vector2(437, 301)
+states/Punch/node = SubResource("AnimationNodeAnimation_0qioo")
+states/Punch/position = Vector2(506, 421)
+states/Start/position = Vector2(166, 100)
+states/Walk/node = SubResource("AnimationNodeAnimation_jhqnn")
+states/Walk/position = Vector2(597, 294)
+transitions = ["Start", "Idle", SubResource("AnimationNodeStateMachineTransition_wg22v"), "Idle", "Walk", SubResource("AnimationNodeStateMachineTransition_5ji8g"), "Walk", "Idle", SubResource("AnimationNodeStateMachineTransition_gh1y2"), "Idle", "Punch", SubResource("AnimationNodeStateMachineTransition_5moda"), "Walk", "Punch", SubResource("AnimationNodeStateMachineTransition_twpll"), "Punch", "Idle", SubResource("AnimationNodeStateMachineTransition_fybca"), "Punch", "Walk", SubResource("AnimationNodeStateMachineTransition_j72ph"), "Idle", "HitReact", SubResource("AnimationNodeStateMachineTransition_jqepr"), "HitReact", "Idle", SubResource("AnimationNodeStateMachineTransition_5ooqd"), "Walk", "HitReact", SubResource("AnimationNodeStateMachineTransition_14byg"), "HitReact", "Walk", SubResource("AnimationNodeStateMachineTransition_jt65t")]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_0apis"]
+radius = 0.72
+height = 3.198
+
+[node name="Character" type="CharacterBody3D"]
+script = ExtResource("1_6m5ja")
+
+[node name="AnimationTree" type="AnimationTree" parent="."]
+tree_root = SubResource("AnimationNodeStateMachine_dhubs")
+anim_player = NodePath("../AnimationPlayer")
+parameters/conditions/is_hit = false
+parameters/conditions/is_idle = false
+parameters/conditions/is_moving = false
+parameters/conditions/punch = false
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.63467, 0)
+shape = SubResource("CapsuleShape3D_0apis")

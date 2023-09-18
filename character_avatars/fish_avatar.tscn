@@ -1,0 +1,21 @@
+[gd_scene load_steps=2 format=3 uid="uid://dgkqepwhdjd52"]
+
+[ext_resource type="Texture2D" uid="uid://coo0wuifrgt47" path="res://characters/Fish.png" id="1_81n1p"]
+
+[node name="Alien_Avatar" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Border" type="ColorRect" parent="."]
+layout_mode = 0
+offset_right = 280.0
+offset_bottom = 257.0
+
+[node name="AvatarPic" type="Sprite2D" parent="."]
+position = Vector2(139, 127)
+scale = Vector2(0.533814, 0.60215)
+texture = ExtResource("1_81n1p")

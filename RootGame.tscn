@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://bo2wcp6pmv3ij"]
+
+[ext_resource type="PackedScene" uid="uid://tbwrkh3d1i65" path="res://caracter_select.tscn" id="1_46uhm"]
+[ext_resource type="Script" path="res://RootGame.gd" id="1_h0go4"]
+
+[node name="Root" type="Node"]
+script = ExtResource("1_h0go4")
+
+[node name="CaracterSelect" parent="." instance=ExtResource("1_46uhm")]
+
+[connection signal="character_selected" from="CaracterSelect" to="." method="_on_caracter_select_character_selected"]
