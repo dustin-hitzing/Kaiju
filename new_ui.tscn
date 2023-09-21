@@ -1,0 +1,44 @@
+[gd_scene load_steps=7 format=3 uid="uid://b38yvvawa3176"]
+
+[ext_resource type="FontFile" uid="uid://0cetmnt3m8lf" path="res://fonts/pricedown bl.otf" id="1_gbdlh"]
+[ext_resource type="Script" path="res://character_select.gd" id="1_m7btf"]
+[ext_resource type="Resource" uid="uid://d068w523yldo0" path="res://resources/avatar_resources/alien.tres" id="2_xm21q"]
+[ext_resource type="Resource" uid="uid://bba350t2k6cog" path="res://resources/avatar_resources/Birb.tres" id="3_kib4k"]
+[ext_resource type="Resource" uid="uid://b2i726xgilagd" path="res://resources/avatar_resources/bunny.tres" id="4_oxghv"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_pf2g5"]
+font = ExtResource("1_gbdlh")
+font_color = Color(0.827451, 0.827451, 0, 1)
+shadow_size = 5
+shadow_color = Color(0.105882, 0.290196, 0.364706, 0)
+
+[node name="UI" type="PanelContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_m7btf")
+characters = Array[Resource("res://resources/resource_bases/avatar_res.gd")]([ExtResource("2_xm21q"), ExtResource("3_kib4k"), ExtResource("4_oxghv")])
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="CenterContainer" type="CenterContainer" parent="VBoxContainer"]
+layout_mode = 2
+
+[node name="Label" type="Label" parent="VBoxContainer/CenterContainer"]
+layout_mode = 2
+text = "Character Select"
+label_settings = SubResource("LabelSettings_pf2g5")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="MarginContainer" type="MarginContainer" parent="VBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/margin_left = 25
+theme_override_constants/margin_right = 25
+
+[node name="FlowContainer" type="FlowContainer" parent="VBoxContainer/MarginContainer"]
+layout_mode = 2

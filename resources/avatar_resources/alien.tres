@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Avatar" load_steps=3 format=3 uid="uid://d068w523yldo0"]
+
+[ext_resource type="Texture2D" uid="uid://dndikap4n7m5" path="res://characters/alien.png" id="1_0uv0p"]
+[ext_resource type="Script" path="res://resources/resource_bases/avatar_res.gd" id="2_1sjo4"]
+
+[resource]
+script = ExtResource("2_1sjo4")
+name = "Alien"
+is_selected = false
+picture = ExtResource("1_0uv0p")

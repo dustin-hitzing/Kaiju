@@ -2,13 +2,13 @@
 
 importer="font_data_dynamic"
 type="FontFile"
-uid="uid://0cetmnt3m8lf"
-path="res://.godot/imported/pricedown bl.otf-6bfe5b53998913d395096fac6f2c7d1b.fontdata"
+uid="uid://bb2ma1gf64b5p"
+path="res://.godot/imported/04B_19__.TTF-c615d20250db4200afcaeeadfe916822.fontdata"
 
 [deps]
 
-source_file="res://fonts/pricedown bl.otf"
-dest_files=["res://.godot/imported/pricedown bl.otf-6bfe5b53998913d395096fac6f2c7d1b.fontdata"]
+source_file="res://fonts/04B_19__.TTF"
+dest_files=["res://.godot/imported/04B_19__.TTF-c615d20250db4200afcaeeadfe916822.fontdata"]
 
 [params]
 
@@ -20,8 +20,8 @@ msdf_pixel_range=8
 msdf_size=48
 allow_system_fallback=true
 force_autohinter=false
-hinting=1
-subpixel_positioning=1
+hinting=2
+subpixel_positioning=0
 oversampling=4.0
 Fallbacks=null
 fallbacks=[]

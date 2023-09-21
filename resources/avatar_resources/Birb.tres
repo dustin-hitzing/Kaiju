@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Avatar" load_steps=3 format=3 uid="uid://bba350t2k6cog"]
+
+[ext_resource type="Texture2D" uid="uid://bo01vmla10tbf" path="res://characters/Birb.png" id="1_l0fw6"]
+[ext_resource type="Script" path="res://resources/resource_bases/avatar_res.gd" id="2_67xjv"]
+
+[resource]
+script = ExtResource("2_67xjv")
+name = "Birb"
+is_selected = false
+picture = ExtResource("1_l0fw6")

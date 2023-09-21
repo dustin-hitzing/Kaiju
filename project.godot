@@ -31,7 +31,7 @@ project/assembly_name="Kaiju"
 
 [editor_plugins]
 
-enabled=PackedStringArray()
+enabled=PackedStringArray("res://addons/assetplacer/plugin.cfg", "res://addons/terrain_3d/plugin.cfg")
 
 [filesystem]
 

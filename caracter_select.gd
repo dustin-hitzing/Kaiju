@@ -19,7 +19,7 @@ func _process(delta):
 
 
 func get_selected_avatar() -> String:
-	var nodes = get_tree().get_nodes_in_group("Avatar")	
+	var nodes = get_tree().get_nodes_in_group("Avatar")
 	for node in nodes:
 		if(node.get_meta("selected")):
 			var name  = node.get_meta("name")
@@ -28,11 +28,11 @@ func get_selected_avatar() -> String:
 
 func go_next_select() -> void:
 	starting_index += 1
-	
+
 	if(starting_index > 9):
 		starting_index = 0
-		
-	var nodes = get_tree().get_nodes_in_group("Avatar")	
+
+	var nodes = get_tree().get_nodes_in_group("Avatar")
 	for node in nodes:
 		if(node.get_meta("Index") == starting_index):
 			node.set_meta("selected", true)
@@ -41,17 +41,17 @@ func go_next_select() -> void:
 
 func go_previous_select() -> void:
 	starting_index -= 1
-	
+
 	if(starting_index < 0):
 		starting_index = 9
-	
-	var nodes = get_tree().get_nodes_in_group("Avatar")	
+
+	var nodes = get_tree().get_nodes_in_group("Avatar")
 	for node in nodes:
 		if(node.get_meta("Index") == starting_index):
 			node.set_meta("selected", true)
 		else:
 			node.set_meta("selected", false)
-		
-		
-			
+
+
+
 
